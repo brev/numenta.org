@@ -3,6 +3,8 @@ branches:
     - gh-pages
 
 language: ruby
+rvm:
+    - 2.2.1
 
 env:
   global:
@@ -14,7 +16,7 @@ notifications:
     channels:
       - "irc.freenode.net#nupic-hackers"
 
-before_install: 
+before_install:
   - gem install bundler
   - bundle install
 
